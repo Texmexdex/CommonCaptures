@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Capture | The Future of Connection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F5F2; /* Warm, professional off-white */
+            color: #262626; /* Dark gray for primary text */
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lora', serif;
+        }
+        
+        /* Animation for section visibility */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Removing all rounded corners for a sharp look */
+        .btn, .form-input, .image-container, .card {
+            border-radius: 0 !important;
+        }
+        
+        /* New class for thin, "reflective" borders */
+        .reflective-border {
+            border: 1px solid;
+            border-image-source: linear-gradient(to right, rgba(0,0,0,0.05), rgba(0,0,0,0.2), rgba(0,0,0,0.05));
+            border-image-slice: 1;
+        }
+        
+        .reflective-border-top {
+            border-top: 2px solid;
+            border-image-source: linear-gradient(to right, rgba(0,0,0,0.0), rgba(0,0,0,0.2), rgba(0,0,0,0.0));
+            border-image-slice: 1;
+        }
+
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- HEADER -->
+    <header class="w-full absolute top-0 left-0 z-10">
+        <div class="container mx-auto px-6 md:px-12 py-6 flex justify-between items-center">
+            <div class="text-xl font-semibold tracking-wider">
+                COMMON CAPTURE
+            </div>
+            <nav class="hidden md:flex items-center space-x-10 text-sm">
+                <a href="#vision" class="hover:text-black transition-colors">Vision</a>
+                <a href="#solution" class="hover:text-black transition-colors">Solution</a>
+                <a href="#opportunity" class="hover:text-black transition-colors">Opportunity</a>
+                <a href="#contact" class="hover:text-black transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="min-h-screen flex items-center pt-24 pb-12">
+            <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <h1 class="text-5xl md:text-7xl font-semibold leading-tight mb-6">
+                        The Bridge to a United World.
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                        We removed the barriers between creators and their communities. This is the future of streaming—direct, effortless, and universally accessible.
+                    </p>
+                    <form class="flex flex-col sm:flex-row gap-2">
+                        <input type="email" placeholder="Enter your email address" required class="form-input flex-grow bg-white border border-gray-300 py-3 px-4 focus:border-black focus:outline-none transition w-full">
+                        <button type="submit" class="btn bg-black text-white font-semibold py-3 px-8 hover:bg-gray-800 transition-colors">
+                            Join Waitlist
+                        </button>
+                    </form>
+                </div>
+                <div class="w-full h-96 image-container reflective-border fade-in" style="transition-delay: 200ms;">
+                     <!-- 
+                        IMAGE DESCRIPTION 1 (HERO):
+                        A high-end, minimalist photograph. A close-up shot of two hands, of different ethnicities, almost touching over a clean, solid light-gray surface. The focus is sharp, the lighting is soft and professional. It evokes connection, trust, and humanity without being cliché.
+                        SEARCH QUERY: "minimalist photo two hands reaching clean background"
+                    -->
+                    <img src="gamer.gif" alt="Animated graphic symbolizing global gamer connection" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- VISION / THE BARRIER -->
+        <section id="vision" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 md:px-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="w-full h-96 image-container reflective-border fade-in">
+                        <!-- 
+                            IMAGE DESCRIPTION 2 (BARRIER):
+                            An architectural photo representing barriers. A clean shot of a brutalist concrete wall with a strong, sharp shadow line dividing it. It's stark, impersonal, and represents an insurmountable obstacle. The aesthetic is clean and minimalist, not messy.
+                            SEARCH QUERY: "brutalist concrete wall with sharp shadow line"
+                        -->
+                        <img src="wall.gif" alt="Animated graphic representing a barrier or wall" class="w-full h-full object-cover">
+                    </div>
+                    <div class="fade-in">
+                        <h2 class="text-4xl md:text-5xl font-semibold mb-6">For Too Long, Connection Had a Cost.</h2>
+                        <p class="text-gray-600 mb-6">
+                            Sharing was a privilege, gated by expensive hardware and frustrating software. These barriers didn't just limit creators; they limited human connection by creating artificial divides.
+                        </p>
+                         <ul class="space-y-2 border-l-2 border-black pl-4">
+                            <li><h3 class="font-semibold text-lg">The Hardware Tax</h3><p class="text-gray-600">A $500+ entry fee that priced millions out.</p></li>
+                            <li><h3 class="font-semibold text-lg">The Software Wall</h3><p class="text-gray-600">Complex tools that stifled creativity.</p></li>
+                            <li><h3 class="font-semibold text-lg">The Platform Silos</h3><p class="text-gray-600">Fragmented communities and walled gardens.</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLUTION / THE BRIDGE -->
+        <section id="solution" class="py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-6 md:px-12 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-semibold mb-6 fade-in">We Built a Direct Bridge.</h2>
+                    <p class="text-lg text-gray-600 mb-12 fade-in">
+                        Common Capture is a cloud pipeline. We turned a multi-hundred dollar, multi-hour problem into a 5-minute, one-time setup. The bridge from your console to the world is now open.
+                    </p>
+                </div>
+                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                    <div class="reflective-border-top pt-6 fade-in" style="transition-delay: 100ms;">
+                        <span class="text-2xl font-semibold">01</span>
+                        <h3 class="text-xl font-semibold my-2">Connect Your Console</h3>
+                        <p class="text-gray-600">Enter your unique Common Capture key once in your console's broadcast settings.</p>
+                    </div>
+                    <div class="reflective-border-top pt-6 fade-in" style="transition-delay: 200ms;">
+                        <span class="text-2xl font-semibold">02</span>
+                        <h3 class="text-xl font-semibold my-2">Link Your Platforms</h3>
+                        <p class="text-gray-600">Tell us where your voice should be heard—Twitch, YouTube, and beyond.</p>
+                    </div>
+                    <div class="reflective-border-top pt-6 fade-in" style="transition-delay: 300ms;">
+                        <span class="text-2xl font-semibold">03</span>
+                        <h3 class="text-xl font-semibold my-2">Share Your World</h3>
+                        <p class="text-gray-600">Press "Broadcast" on your controller. You are now live. Everywhere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- OPPORTUNITY (INVESTORS) -->
+        <section id="opportunity" class="py-20 md:py-32">
+             <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in">
+                    <h2 class="text-4xl md:text-5xl font-semibold mb-6">A First-Mover Advantage.</h2>
+                    <p class="text-gray-600 mb-8">We are the first and only solution for a massive, underserved market. Even capturing a microscopic <span class="font-semibold text-black">0.01%</span> of console gamers who wish to stream generates over <span class="font-semibold text-black">$13,000 per month</span>, showcasing the incredible stability of our business model.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                        <div>
+                            <p class="text-4xl font-semibold text-black">350M+</p>
+                            <p class="text-gray-600">Untapped Gamers</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-semibold text-black">10%</p>
+                            <p class="text-gray-600">Desire to Stream</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-semibold text-black">$1.3M+</p>
+                            <p class="text-gray-600">Monthly at 1%</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="w-full h-96 image-container reflective-border fade-in" style="transition-delay: 200ms;">
+                     <!-- 
+                        IMAGE DESCRIPTION 3 (OPPORTUNITY):
+                        An elegant, professional flat-lay photo on a clean, light-colored desk. It features a high-end leather-bound notebook open to a page with a clean, hand-drawn upward-trending graph, a sleek modern pen beside it, and a single, healthy green plant in a minimalist pot. It signifies thoughtful, organic growth and professionalism.
+                        SEARCH QUERY: "professional desk flat lay with notebook graph and plant"
+                    -->
+                    <img src="CCANIMATED.gif" alt="Animated company logo or graphic" class="w-full h-full object-contain">
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- FOOTER / CONTACT -->
+    <footer id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+             <h2 class="text-3xl font-semibold mb-8">Become a Founding Member.</h2>
+             <form class="max-w-lg mx-auto flex flex-col sm:flex-row gap-2">
+                <input type="email" placeholder="Enter your email address" required class="form-input flex-grow bg-white border border-gray-300 py-3 px-4 focus:border-black focus:outline-none transition w-full">
+                <button type="submit" class="btn bg-black text-white font-semibold py-3 px-8 hover:bg-gray-800 transition-colors">
+                    Request Early Access
+                </button>
+            </form>
+            <div class="mt-20 pt-10 border-t border-gray-200">
+                <p class="text-sm text-gray-500">&copy; 2025 Common Capture. For a more united world.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            const targets = document.querySelectorAll('.fade-in');
+            targets.forEach(target => {
+                observer.observe(target);
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
