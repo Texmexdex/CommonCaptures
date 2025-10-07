@@ -79,8 +79,8 @@
                     <p class="text-lg text-gray-600 mb-8 max-w-lg">
                         We removed the barriers between creators and their communities. This is the future of streaming—direct, effortless, and universally accessible.
                     </p>
-                    <form class="flex flex-col sm:flex-row gap-2">
-                        <input type="email" placeholder="Enter your email address" required class="form-input flex-grow bg-white border border-gray-300 py-3 px-4 focus:border-black focus:outline-none transition w-full">
+                    <form action="https://formspree.io/f/mrbyaeqr" method="POST" class="flex flex-col sm:flex-row gap-2">
+                        <input type="email" name="email" placeholder="Enter your email address" required class="form-input flex-grow bg-white border border-gray-300 py-3 px-4 focus:border-black focus:outline-none transition w-full">
                         <button type="submit" class="btn bg-black text-white font-semibold py-3 px-8 hover:bg-gray-800 transition-colors">
                             Join Waitlist
                         </button>
@@ -99,13 +99,7 @@
         <section id="vision" class="py-20 md:py-32">
             <div class="container mx-auto px-6 md:px-12">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                    <div class="w-full h-96 image-container reflective-border fade-in">
-                        <video autoplay loop muted playsinline class="w-full h-full object-contain">
-                            <source src="wall.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="fade-in">
+                    <div class="fade-in lg:order-last">
                         <h2 class="text-4xl md:text-5xl font-semibold mb-6">For Too Long, Connection Had a Cost.</h2>
                         <p class="text-gray-600 mb-6">
                             Sharing was a privilege, gated by expensive hardware and frustrating software. These barriers didn't just limit creators; they limited human connection by creating artificial divides.
@@ -115,6 +109,12 @@
                             <li><h3 class="font-semibold text-lg">The Software Wall</h3><p class="text-gray-600">Complex tools that stifled creativity.</p></li>
                             <li><h3 class="font-semibold text-lg">The Platform Silos</h3><p class="text-gray-600">Fragmented communities and walled gardens.</p></li>
                         </ul>
+                    </div>
+                     <div class="w-full h-96 image-container reflective-border fade-in">
+                        <video autoplay loop muted playsinline class="w-full h-full object-contain">
+                            <source src="wall.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
             </div>
@@ -185,8 +185,8 @@
     <footer id="contact" class="py-20 bg-white">
         <div class="container mx-auto px-6 md:px-12 text-center">
              <h2 class="text-3xl font-semibold mb-8">Become a Founding Member.</h2>
-             <form class="max-w-lg mx-auto flex flex-col sm:flex-row gap-2">
-                <input type="email" placeholder="Enter your email address" required class="form-input flex-grow bg-white border border-gray-300 py-3 px-4 focus:border-black focus:outline-none transition w-full">
+             <form action="https://formspree.io/f/mrbyaeqr" method="POST" class="max-w-lg mx-auto flex flex-col sm:flex-row gap-2">
+                <input type="email" name="email" placeholder="Enter your email address" required class="form-input flex-grow bg-white border border-gray-300 py-3 px-4 focus:border-black focus:outline-none transition w-full">
                 <button type="submit" class="btn bg-black text-white font-semibold py-3 px-8 hover:bg-gray-800 transition-colors">
                     Request Early Access
                 </button>
@@ -216,7 +216,3 @@
 
 </body>
 </html>
-
-
-
-
