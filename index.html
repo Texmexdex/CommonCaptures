@@ -18,6 +18,14 @@
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Lora', serif;
         }
+
+        /* Business name custom style */
+        .business-name {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.15em;
+            font-weight: 600;
+        }
         
         /* Animation for section visibility */
         .fade-in {
@@ -56,7 +64,7 @@
     <!-- HEADER -->
     <header class="w-full absolute top-0 left-0 z-10">
         <div class="container mx-auto px-6 md:px-12 py-6 flex justify-between items-center">
-            <div class="text-xl font-semibold tracking-wider">
+            <div class="business-name">
                 COMMON CAPTURE
             </div>
             <nav class="hidden md:flex items-center space-x-10 text-sm">
@@ -80,7 +88,7 @@
                         We removed the barriers between creators and their communities. This is the future of streaming—direct, effortless, and universally accessible.
                     </p>
                     <form action="https://formspree.io/f/mrbyaeqr" method="POST" class="flex flex-col sm:flex-row gap-2">
-                        <input type="email" name="email" placeholder="Enter your email address" required class="form-input flex-grow bg-white border border-gray-300 py-3 px-4 focus:border-black focus:outline-none transition w-full">
+                        <input type="email" name="email" placeholder="Enter your email address" required class="form-input flex-grow bg-white border border-gray-300 py-3 px-4 focus:border-black focus:outline-none" />
                         <button type="submit" class="btn bg-black text-white font-semibold py-3 px-8 hover:bg-gray-800 transition-colors">
                             Join Waitlist
                         </button>
@@ -102,7 +110,7 @@
                     <div class="fade-in lg:order-last">
                         <h2 class="text-4xl md:text-5xl font-semibold mb-6">For Too Long, Connection Had a Cost.</h2>
                         <p class="text-gray-600 mb-6">
-                            Sharing was a privilege, gated by expensive hardware and frustrating software. These barriers didn't just limit creators; they limited human connection by creating artificial divides.
+                            Sharing was a privilege, gated by expensive hardware and frustrating software. These barriers didn't just limit creators; they limited human connection by creating artificial walls.
                         </p>
                          <ul class="space-y-2 border-l-2 border-black pl-4">
                             <li><h3 class="font-semibold text-lg">The Hardware Tax</h3><p class="text-gray-600">A $500+ entry fee that priced millions out.</p></li>
@@ -154,7 +162,7 @@
              <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div class="fade-in">
                     <h2 class="text-4xl md:text-5xl font-semibold mb-6">A First-Mover Advantage.</h2>
-                    <p class="text-gray-600 mb-8">We are the first and only solution for a massive, underserved market. Even capturing a microscopic <span class="font-semibold text-black">0.01%</span> of console gamers who wish to stream generates over <span class="font-semibold text-black">$13,000 per month</span>, showcasing the incredible stability of our business model.</p>
+                    <p class="text-gray-600 mb-8">We are the first and only solution for a massive, underserved market. Even capturing a microscopic <span class="font-semibold text-black">0.01%</span> would be a sea change for the industry.</p>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
                         <div>
                             <p class="text-4xl font-semibold text-black">350M+</p>
@@ -186,7 +194,7 @@
         <div class="container mx-auto px-6 md:px-12 text-center">
              <h2 class="text-3xl font-semibold mb-8">Become a Founding Member.</h2>
              <form action="https://formspree.io/f/mrbyaeqr" method="POST" class="max-w-lg mx-auto flex flex-col sm:flex-row gap-2">
-                <input type="email" name="email" placeholder="Enter your email address" required class="form-input flex-grow bg-white border border-gray-300 py-3 px-4 focus:border-black focus:outline-none transition w-full">
+                <input type="email" name="email" placeholder="Enter your email address" required class="form-input flex-grow bg-white border border-gray-300 py-3 px-4 focus:border-black focus:outline-none" />
                 <button type="submit" class="btn bg-black text-white font-semibold py-3 px-8 hover:bg-gray-800 transition-colors">
                     Request Early Access
                 </button>
@@ -216,3 +224,4 @@
 
 </body>
 </html>
+
